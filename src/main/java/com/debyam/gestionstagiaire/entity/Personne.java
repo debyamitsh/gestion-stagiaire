@@ -15,7 +15,7 @@ public class Personne {
     private String nom;
     private String postNom;
     private String prenom;
-    private Date dateNaissance;
+    private String dateNaissance;
     private String genre;
     private String telephone;
     private String email;
@@ -23,7 +23,7 @@ public class Personne {
     public Personne() {
     }
 
-    public Personne(Long id, String nom, String postNom, String prenom, Date dateNaissance, String genre, String telephone, String email) {
+    public Personne(Long id, String nom, String postNom, String prenom, String dateNaissance, String genre, String telephone, String email) {
         this.id = id;
         this.nom = nom;
         this.postNom = postNom;
@@ -66,11 +66,11 @@ public class Personne {
         this.prenom = prenom;
     }
 
-    public Date getDateNaissance() {
+    public String getDateNaissance() {
         return dateNaissance;
     }
 
-    public void setDateNaissance(Date dateNaissance) {
+    public void setDateNaissance(String dateNaissance) {
         this.dateNaissance = dateNaissance;
     }
 
